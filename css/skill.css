@@ -1,3 +1,7 @@
+.mh-skills {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 .mh-skills .mh-professional-skill {
     padding-right: 60px;
   }
@@ -112,7 +116,7 @@
     height: 7px;
     margin: 30px 0 2px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: #eee;
   }
   
   .candidatos .parcial .percentagem {
@@ -124,7 +128,7 @@
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: #0bceaf;
+    background: #4157d8d7;
     -webkit-transition: 3s all;
     -webkit-animation-duration: 3s;
     -webkit-animation-name: animationProgress;
@@ -141,6 +145,85 @@
             animation-name: animationProgress;
   }
   
+
+
+
+
+  
+.progress {
+  width: 100px;
+  height: 100px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid ;
+  border-color: #4157d8d7;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
   @-webkit-keyframes animationProgress {
     from {
       width: 0;
